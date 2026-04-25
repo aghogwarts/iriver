@@ -16,7 +16,7 @@ Some IFP models can switch firmware modes from the player menu:
 
 **Trade-off:** UMS mode doesn't support OGG Vorbis playback (MP3/WMA still work fine).
 
-If your player doesn't have this option, proceed to Option B.
+If your player doesn't have this option (the IFP-180TC does not), proceed to Option B.
 
 ---
 
@@ -38,7 +38,7 @@ Install [Homebrew](https://brew.sh) if you don't have it:
 brew install libusb libusb-compat wget
 ```
 
-`libusb-compat` provides the legacy `libusb-0.1` API that libifp expects.
+`libusb-compat` provides the legacy `libusb-0.1` API that libifp expects. `libusb` is the modern USB access library. `wget` is for downloading the source tarball.
 
 ### Step 2: Download and extract libifp
 
@@ -51,33 +51,39 @@ cd libifp-1.0.1.0
 
 ### Step 3: Configure and build
 
-The key is pointing the build at Homebrew's `libusb-compat` headers and libs:
+The key is telling the build system where to find `libusb-compat` and to link against it. The `configure` script's `--with-libusb-prefix` flag is broken in this version, so you must pass linker flags directly:
 
 ```bash
-# Find where Homebrew installed libusb-compat
-LIBUSB_PREFIX=$(brew --prefix libusb-compat)
-
-# Configure
-./configure --with-libusb-prefix=$LIBUSB_PREFIX
-
-# Build
+LDFLAGS="-L$(brew --prefix libusb-compat)/lib" LIBS="-lusb" ./configure
 make
 ```
 
-**If `make` fails on the final link step** (a known macOS issue), manually link:
+**Why this specific command:** The `configure` script detects the `usb.h` header fine, but doesn't embed the library search path into the Makefile it generates. `LDFLAGS` tells the linker _where_ to find libraries (`-L` = library search path), and `LIBS="-lusb"` tells it _what_ to link against. Without this, `make` will compile everything successfully but fail at the linking stage with "Undefined symbols" errors for all the `usb_*` functions.
+
+**Expected output:** You will see many `-Wpointer-sign` warnings during compilation. These are harmless — it's a 2004 codebase where `uint8_t*` and `char*` were used interchangeably. As long as `make` exits without `Error`, you're good.
+
+### Step 4: Install the binary AND the shared library
+
+The built binary depends on `libifp.4.dylib` at runtime. You must install both:
 
 ```bash
-gcc -g -O2 -o ifp ifp-ifp.o ifp-ifp_routines.o ./libunicodehack.a \
-    -liconv \
-    $(brew --prefix libusb-compat)/lib/libusb.dylib
+# Install the shared library
+sudo cp src/.libs/libifp.4.dylib /usr/local/lib/
+sudo ln -sf /usr/local/lib/libifp.4.dylib /usr/local/lib/libifp.dylib
+
+# Install the CLI tool
+sudo cp examples/.libs/ifpline /usr/local/bin/ifp
 ```
 
-### Step 4: Install
+**Note:** The binary is at `examples/.libs/ifpline` (not `ifp` — the build names it `ifpline` internally). We rename it to `ifp` during install for convenience.
 
-```bash
-sudo cp ifp /usr/local/bin/
-# Or if you prefer ~/bin:
-mkdir -p ~/bin && cp ifp ~/bin/
+If you skip the `libifp.4.dylib` copy, you'll get this error when running `ifp`:
+
+```
+dyld[XXXX]: Library not loaded: /usr/local/lib/libifp.4.dylib
+  Referenced from: /usr/local/bin/ifp
+  Reason: tried: '/usr/local/lib/libifp.4.dylib' (no such file)
+zsh: abort
 ```
 
 ### Step 5: Test
@@ -100,6 +106,15 @@ ifp firmversion
 # Check free space
 ifp df
 ```
+
+**Expected output:** You'll see a harmless warning line on every command:
+
+```
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+```
+
+This is normal — the IFP-180TC returns 4 bytes for an undocumented diagnostic value where the library expects 8. It does not affect functionality.
 
 ---
 
@@ -133,7 +148,6 @@ ifp rm -r /OldStuff
 ### Device Info
 
 ```bash
-# Full device info string
 ifp battery        # Battery level (0-4)
 ifp df             # Total and free space
 ifp typestring     # Model number
@@ -160,7 +174,7 @@ On macOS, you may need to allow the USB device access. Try:
 sudo ifp ls /
 ```
 
-If that works, create a launch daemon or use `sudo` each time.
+If that works, create a launch daemon or use `sudo` each time. In practice, on recent macOS versions the device may work without `sudo` after the first successful `sudo` call in a session.
 
 ### Device not detected at all
 
@@ -168,6 +182,56 @@ If that works, create a launch daemon or use `sudo` each time.
 2. Verify it appears in **System Information → USB** (you've confirmed this ✓)
 3. Try a different USB port or cable
 4. Try unplugging and re-plugging
+
+### "Device isn't responding.. try jiggling the handle. (error 8)"
+
+This means the USB connection is in a bad state. Common causes:
+
+- A previous file transfer was interrupted (e.g., a download that failed mid-rename)
+- The device was left in a locked state from a failed operation
+
+**Fix:** Unplug the USB cable, wait a few seconds, plug it back in. If it still fails, power cycle the player itself (turn off → turn on) before reconnecting. This always resolves it.
+
+### Download fails with "rename from .mp3 to .m3p failed" (error -17)
+
+The iRiver protocol temporarily renames files during download (`.mp3` → `.m3p`) as a lock mechanism. Error `-17` is `EEXIST`, meaning a `.m3p` file with that name already exists — likely from a previous interrupted transfer.
+
+**Fix:** Check `ifp ls /` for any leftover `.m3p` files and delete them with `ifp rm`, then retry the download. If the file has special characters in its name (see below), it may be easier to just delete and re-upload.
+
+### Filenames with `!` or special characters (zsh escaping)
+
+zsh treats `!` as a history expansion character. If a filename contains `!`, use **single quotes** instead of double quotes:
+
+```bash
+# WRONG — zsh will error with "event not found"
+ifp rm "/iRiver, Catch the digital flow!.mp3"
+
+# CORRECT — single quotes prevent zsh interpretation
+ifp rm '/iRiver, Catch the digital flow!.mp3'
+```
+
+This applies to any `ifp` command where the filename contains `!`, `$`, backticks, or other shell-special characters.
+
+### Linker errors: "Undefined symbols for architecture x86_64" (\_usb_bulk_read, \_usb_open, etc.)
+
+This means `configure` found the `usb.h` header but didn't embed the library path into the Makefile. The fix:
+
+```bash
+make clean
+LDFLAGS="-L$(brew --prefix libusb-compat)/lib" LIBS="-lusb" ./configure
+make
+```
+
+Do NOT use `./configure --with-libusb-prefix=...` — this flag is recognized by the configure script but doesn't actually work properly on macOS.
+
+### "Library not loaded: libifp.4.dylib" (dyld error)
+
+You installed the `ifp` binary but forgot the shared library. Fix:
+
+```bash
+sudo cp src/.libs/libifp.4.dylib /usr/local/lib/
+sudo ln -sf /usr/local/lib/libifp.4.dylib /usr/local/lib/libifp.dylib
+```
 
 ### Build errors with newer Xcode/clang
 
@@ -180,6 +244,18 @@ CFLAGS="-Wno-error" make
 ### macOS System Extension / Kernel Extension issues
 
 `libifp` uses `libusb` in userspace — it does **not** require kernel extensions or system extensions. It should work without disabling SIP or any security settings.
+
+---
+
+## Post-Install: Cleanup
+
+After a successful install, the source directory in Downloads is no longer needed. The important installed files are:
+
+- `/usr/local/bin/ifp` — the CLI binary
+- `/usr/local/lib/libifp.4.dylib` — the shared library
+- `/usr/local/lib/libifp.dylib` — symlink to the above
+
+You can safely delete `~/Downloads/libifp-1.0.1.0/` and `~/Downloads/libifp-1.0.1.0.tar.gz`. Do NOT delete anything in `/usr/local/`.
 
 ---
 
@@ -216,3 +292,4 @@ The libifp source (in the SourceForge Git repo) contains all the USB command seq
 ---
 
 _Built from the [ifp-driver](https://ifp-driver.sourceforge.net/) open-source project (libifp 1.0.1.0)_
+_Tested on macOS Sequoia (darwin25.4.0) with Xcode Command Line Tools, April 2026_
