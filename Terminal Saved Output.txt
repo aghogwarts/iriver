@@ -1,0 +1,1416 @@
+Last login: Sat Apr 25 21:23:34 on console
+jarvis@MacBookPro ~ % brew install libusb libusb-compat wget
+==> Auto-updating Homebrew...
+Adjust how often this is run with `$HOMEBREW_AUTO_UPDATE_SECS` or disable with
+`$HOMEBREW_NO_AUTO_UPDATE=1`. Hide these hints with `$HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core and homebrew/cask).
+==> New Formulae
+erfa: Essential Routines for Fundamental Astronomy
+floresta: Lightweight and embeddable Bitcoin client, built for sovereignty
+forgecode: AI-enhanced terminal development environment
+hf-mount: Mount Hugging Face Buckets and repos as local filesystems
+lazymake: Modern TUI for Makefiles
+mcp-remote: Remote proxy for Model Context Protocol with OAuth support
+rabbitmqadmin: Command-line tool for RabbitMQ that uses the HTTP API
+sdl3_mixer: Sample multi-channel audio mixer library
+
+You have 2 outdated formulae installed.
+
+Warning: libusb 1.0.29 is already installed and up-to-date.
+To reinstall 1.0.29, run:
+  brew reinstall libusb
+==> Fetching downloads for: libusb-compat and wget
+✔︎ Bottle Manifest wget (1.25.0)                                           Downloaded   13.3KB/ 13.3KB
+✔︎ Bottle Manifest libusb-compat (0.1.8)                                   Downloaded   17.3KB/ 17.3KB
+✔︎ Bottle Manifest libunistring (1.4.2)                                    Downloaded    7.3KB/  7.3KB
+✔︎ Bottle Manifest libidn2 (2.3.8)                                         Downloaded   12.8KB/ 12.8KB
+✔︎ Bottle Manifest ca-certificates (2026-03-19)                            Downloaded    2.0KB/  2.0KB
+✔︎ Bottle Manifest openssl@3 (3.6.2)                                       Downloaded   12.0KB/ 12.0KB
+✔︎ Bottle Manifest gettext (1.0)                                           Downloaded   13.7KB/ 13.7KB
+✔︎ Bottle libusb-compat (0.1.8)                                            Downloaded   26.1KB/ 26.1KB
+✔︎ Bottle ca-certificates (2026-03-19)                                     Downloaded  132.4KB/132.4KB
+✔︎ Bottle libidn2 (2.3.8)                                                  Downloaded  317.6KB/317.6KB
+✔︎ Bottle wget (1.25.0)                                                    Downloaded    1.6MB/  1.6MB
+✔︎ Bottle libunistring (1.4.2)                                             Downloaded    1.9MB/  1.9MB
+✔︎ Bottle gettext (1.0)                                                    Downloaded   10.2MB/ 10.2MB
+✔︎ Bottle openssl@3 (3.6.2)                                                Downloaded   10.1MB/ 10.1MB
+==> Pouring libusb-compat--0.1.8.sonoma.bottle.1.tar.gz
+🍺  /usr/local/Cellar/libusb-compat/0.1.8: 14 files, 101.6KB
+==> Running `brew cleanup libusb-compat`...
+Disable this behaviour by setting `HOMEBREW_NO_INSTALL_CLEANUP=1`.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+==> Installing dependencies for wget: libunistring, gettext, libidn2, ca-certificates and openssl@3
+==> Installing wget dependency: libunistring
+==> Pouring libunistring--1.4.2.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/libunistring/1.4.2: 59 files, 5.8MB
+==> Installing wget dependency: gettext
+==> Pouring gettext--1.0.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/gettext/1.0: 2,499 files, 33.9MB
+==> Installing wget dependency: libidn2
+==> Pouring libidn2--2.3.8.sonoma.bottle.tar.gz
+🍺  /usr/local/Cellar/libidn2/2.3.8: 80 files, 858.4KB
+==> Installing wget dependency: ca-certificates
+==> Pouring ca-certificates--2026-03-19.all.bottle.tar.gz
+==> Regenerating CA certificate bundle from keychain, this may take a while...
+🍺  /usr/local/Cellar/ca-certificates/2026-03-19: 4 files, 237.5KB
+==> Installing wget dependency: openssl@3
+==> Pouring openssl@3--3.6.2.tahoe.bottle.tar.gz
+🍺  /usr/local/Cellar/openssl@3/3.6.2: 7,627 files, 38MB
+==> Installing wget
+==> Pouring wget--1.25.0.sonoma.bottle.1.tar.gz
+🍺  /usr/local/Cellar/wget/1.25.0: 92 files, 4.7MB
+==> Running `brew cleanup wget`...
+jarvis@MacBookPro ~ % cd ~/Downloads
+jarvis@MacBookPro Downloads % wget https://sourceforge.net/projects/ifp-driver/files/libifp/1.0.1.0-stable/libifp-1.0.1.0.tar.gz/download -O libifp-1.0.1.0.tar.gz
+--2026-04-26 01:27:26--  https://sourceforge.net/projects/ifp-driver/files/libifp/1.0.1.0-stable/libifp-1.0.1.0.tar.gz/download
+Resolving sourceforge.net (sourceforge.net)... 104.18.13.149, 104.18.12.149, 2606:4700::6812:d95, ...
+Connecting to sourceforge.net (sourceforge.net)|104.18.13.149|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://downloads.sourceforge.net/project/ifp-driver/libifp/1.0.1.0-stable/libifp-1.0.1.0.tar.gz?ts=gAAAAABp7RynxkETprtJZumAbKXGm2ZQOff77LPTDZlkFKCfFPYi6ZVdazR0FtW1ewV6FEnHQv2WBZiDJg3vFh60mQFEG8z_4w%3D%3D&use_mirror=master&r= [following]
+--2026-04-26 01:27:27--  https://downloads.sourceforge.net/project/ifp-driver/libifp/1.0.1.0-stable/libifp-1.0.1.0.tar.gz?ts=gAAAAABp7RynxkETprtJZumAbKXGm2ZQOff77LPTDZlkFKCfFPYi6ZVdazR0FtW1ewV6FEnHQv2WBZiDJg3vFh60mQFEG8z_4w%3D%3D&use_mirror=master&r=
+Resolving downloads.sourceforge.net (downloads.sourceforge.net)... 104.18.12.149, 104.18.13.149, 2606:4700::6812:d95, ...
+Connecting to downloads.sourceforge.net (downloads.sourceforge.net)|104.18.12.149|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://master.dl.sourceforge.net/project/ifp-driver/libifp/1.0.1.0-stable/libifp-1.0.1.0.tar.gz?viasf=1 [following]
+--2026-04-26 01:27:27--  https://master.dl.sourceforge.net/project/ifp-driver/libifp/1.0.1.0-stable/libifp-1.0.1.0.tar.gz?viasf=1
+Resolving master.dl.sourceforge.net (master.dl.sourceforge.net)... 216.105.38.12
+Connecting to master.dl.sourceforge.net (master.dl.sourceforge.net)|216.105.38.12|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 455156 (444K) [application/x-gzip]
+Saving to: ‘libifp-1.0.1.0.tar.gz’
+
+libifp-1.0.1.0.tar.gz     100%[==================================>] 444.49K  44.8KB/s    in 9.9s    
+
+2026-04-26 01:27:43 (44.8 KB/s) - ‘libifp-1.0.1.0.tar.gz’ saved [455156/455156]
+
+jarvis@MacBookPro Downloads % tar xzf libifp-1.0.1.0.tar.gz
+
+jarvis@MacBookPro Downloads % cd libifp-1.0.1.0
+jarvis@MacBookPro libifp-1.0.1.0 % LIBUSB_PREFIX=$(brew --prefix libusb-compat)
+jarvis@MacBookPro libifp-1.0.1.0 % brew --prefix libusb-compat
+/usr/local/opt/libusb-compat
+jarvis@MacBookPro libifp-1.0.1.0 % ./configure --with-libusb-prefix=$LIBUSB_PREFIX
+configure: WARNING: unrecognized options: --with-libusb-prefix
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 2
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... mkdir -p
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '501' is supported by ustar format... yes
+checking whether GID '20' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking build system type... x86_64-apple-darwin25.4.0
+checking host system type... x86_64-apple-darwin25.4.0
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /Library/Developer/CommandLineTools/usr/bin/ld
+checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 786432
+checking how to convert x86_64-apple-darwin25.4.0 file names to x86_64-apple-darwin25.4.0 format... func_convert_file_noop
+checking how to convert x86_64-apple-darwin25.4.0 file names to toolchain format... func_convert_file_noop
+checking for /Library/Developer/CommandLineTools/usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... ld: warning: -single_module is obsolete
+no
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fno-common -DPIC
+checking if gcc PIC flag -fno-common -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin25.4.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking whether byte ordering is bigendian... no
+checking for ld... /Library/Developer/CommandLineTools/usr/bin/ld
+checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking for ELF binary format... no
+checking for the common suffixes of directories in the library search path... lib,lib,lib
+checking for iconv... yes
+checking for working iconv... yes
+checking how to link with libiconv... -liconv
+checking whether iconv is compatible with its POSIX signature... yes
+checking libusb... done
+checking for usb.h... yes
+checking for usb_init in -lusb... yes
+checking for strncasecmp... yes
+checking for inttypes.h... (cached) yes
+checking for stdio.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for wchar.h... yes
+checking for string.h... (cached) yes
+checking for time.h... yes
+checking for fts.h... yes
+checking for iconv.h... yes
+checking for inline... inline
+checking if we should build the examples... no
+checking for doxygen... no
+checking kernel source code... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating docs/Makefile
+config.status: creating dpkg/Makefile
+config.status: creating docs/doxygen.cfg
+config.status: creating examples/Makefile
+config.status: creating kbuild/Makefile
+config.status: creating src/Makefile
+config.status: executing depfiles commands
+config.status: executing libtool commands
+configure: WARNING: unrecognized options: --with-libusb-prefix
+
+-----------------------------------------------------
+configuration complete
+	libifp:               yes
+	linux kernel module:  no
+	examples:             no
+	documentation:        no
+-----------------------------------------------------
+type 'make' to build
+
+jarvis@MacBookPro libifp-1.0.1.0 % make
+Making all in src
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT prim.lo -MD -MP -MF .deps/prim.Tpo -c -o prim.lo prim.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT prim.lo -MD -MP -MF .deps/prim.Tpo -c prim.c  -fno-common -DPIC -o .libs/prim.o
+prim.c:286:26: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+  286 |         i = ifp_locale_to_utf16(buf, IFP_BUFFER_SIZE, s, strlen(s)+1);
+      |                                 ^~~
+./ifp_os.h:135:32: note: passing argument to parameter 'o' here
+  135 | int ifp_locale_to_utf16(char * o, int max_o, const char * i, int max_i);
+      |                                ^
+prim.c:315:32: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  315 |         i = ifp_utf16_to_locale(s, n, buf, IFP_BUFFER_SIZE);
+      |                                       ^~~
+./ifp_os.h:136:59: note: passing argument to parameter 'i' here
+  136 | int ifp_utf16_to_locale(char * o, int max_o, const char * i, int max_i);
+      |                                                           ^
+2 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT prim.lo -MD -MP -MF .deps/prim.Tpo -c prim.c -o prim.o >/dev/null 2>&1
+mv -f .deps/prim.Tpo .deps/prim.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT comp.lo -MD -MP -MF .deps/comp.Tpo -c -o comp.lo comp.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT comp.lo -MD -MP -MF .deps/comp.Tpo -c comp.c  -fno-common -DPIC -o .libs/comp.o
+comp.c:26:12: warning: initializing 'char *' with an expression of type
+      'uint8_t[1024]' (aka 'unsigned char[1024]') converts between pointers to integer types where
+      one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+   26 |     char * p = dev->b2;
+      |            ^   ~~~~~~~
+comp.c:156:33: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+  156 |                 ret = ifp_dir_next_debug(dev, utf8_buf, IFP_BUFFER_SIZE,
+      |                                               ^~~~~~~~
+./prim.h:102:56: note: passing argument to parameter 's' here
+  102 | int ifp_dir_next_debug(struct ifp_device * dev, char * s, int n, int mode,
+      |                                                        ^
+comp.c:166:12: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  166 |                                 strlen(utf8_buf),
+      |                                        ^~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:96:28: note: 
+      passing argument to parameter '__s' here
+   96 | size_t   strlen(const char *__s);
+      |                             ^
+comp.c:165:29: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  165 |                         i = callbk(context, ret, utf8_buf,
+      |                                                  ^~~~~~~~
+comp.c:303:14: warning: variable length array folded to constant array as an
+      extension [-Wgnu-folding-constant]
+  303 |         uint8_t tmp[data_ptr_size];
+      |                     ^~~~~~~~~~~~~
+comp.c:370:9: warning: initializing 'char *' with an expression of type
+      'uint8_t[1024]' (aka 'unsigned char[1024]') converts between pointers to integer types where
+      one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  370 |         char * b = dev->b3;
+      |                ^   ~~~~~~~
+comp.c:398:9: warning: initializing 'char *' with an expression of type
+      'uint8_t[1024]' (aka 'unsigned char[1024]') converts between pointers to integer types where
+      one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  398 |         char * b = dev->b3;
+      |                ^   ~~~~~~~
+comp.c:496:25: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  496 |         i = ifp_file_open(dev, buf);
+      |                                ^~~
+./prim.h:82:57: note: passing argument to parameter 'f' here
+   82 | int ifp_file_open(struct ifp_device * dev, const char * f);
+      |                                                         ^
+comp.c:545:22: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  545 |                                         dirname, dsize, utf8_buf,
+      |                                                         ^~~~~~~~
+comp.c:476:15: note: passing argument to parameter 'f' here
+  476 |         const char * f, int fsize)
+      |                      ^
+comp.c:553:29: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  553 |                         i = callbk(context, ret, utf8_buf, filesize);
+      |                                                  ^~~~~~~~
+comp.c:650:9: warning: initializing 'char *' with an expression of type
+      'uint8_t[1024]' (aka 'unsigned char[1024]') converts between pointers to integer types where
+      one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  650 |         char * b = dev->b2;
+      |                ^   ~~~~~~~
+11 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT comp.lo -MD -MP -MF .deps/comp.Tpo -c comp.c -o comp.o >/dev/null 2>&1
+mv -f .deps/comp.Tpo .deps/comp.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT readwrite.lo -MD -MP -MF .deps/readwrite.Tpo -c -o readwrite.lo readwrite.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT readwrite.lo -MD -MP -MF .deps/readwrite.Tpo -c readwrite.c  -fno-common -DPIC -o .libs/readwrite.o
+readwrite.c:87:10: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'char *' converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+   87 |         strncpy(dev->filename, f, IFP_BUFFER_SIZE);
+      |                 ^~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:259:42: note: 
+      expanded from macro 'strncpy'
+  259 | #define strncpy(...) __strncpy_chk_func (__VA_ARGS__)
+      |                                          ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:147:28: note: 
+      expanded from macro '__strncpy_chk_func'
+  147 |                 __builtin___strncpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+      |                                          ^~~~
+readwrite.c:88:29: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'char *' converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+   88 |         i = ifp_copy_parent_string(dev->dirname, f, IFP_BUFFER_SIZE);
+      |                                    ^~~~~~~~~~~~
+readwrite.c:13:35: note: passing argument to parameter 'p' here
+   13 | int ifp_copy_parent_string(char * p, const char * f, int n) {
+      |                                   ^
+readwrite.c:91:29: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+   91 |         i = check_permissions(dev, dev->filename);
+      |                                    ^~~~~~~~~~~~~
+readwrite.c:36:68: note: passing argument to parameter 'f' here
+   36 | static int check_permissions(struct ifp_device * dev, const char * f) {
+      |                                                                    ^
+readwrite.c:94:23: warning: passing 'uint8_t[16384]'
+      (aka 'unsigned char[16384]') to parameter of type 'char *' converts between pointers to integer
+      types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+   94 |                 i = mangle_filename(dev->iobuff, dev->filename, IFP_BUFFER_SIZE);
+      |                                     ^~~~~~~~~~~
+readwrite.c:58:35: note: passing argument to parameter 'd' here
+   58 | static int mangle_filename(char * d, const char * s, int n)
+      |                                   ^
+readwrite.c:94:36: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+   94 |                 i = mangle_filename(dev->iobuff, dev->filename, IFP_BUFFER_SIZE);
+      |                                                  ^~~~~~~~~~~~~
+readwrite.c:58:51: note: passing argument to parameter 's' here
+   58 | static int mangle_filename(char * d, const char * s, int n)
+      |                                                   ^
+readwrite.c:97:23: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+   97 |                 i = ifp_rename(dev, dev->filename, dev->iobuff);
+      |                                     ^~~~~~~~~~~~~
+../include/ifp.h:315:54: note: passing argument to parameter 'old_path' here
+  315 | int ifp_rename(struct ifp_device * dev, const char * old_path, const char * new_path);
+      |                                                      ^
+readwrite.c:97:38: warning: passing 'uint8_t[16384]'
+      (aka 'unsigned char[16384]') to parameter of type 'const char *' converts between pointers to
+      integer types where one is of the unique plain 'char' type and the other is not
+      [-Wpointer-sign]
+   97 |                 i = ifp_rename(dev, dev->filename, dev->iobuff);
+      |                                                    ^~~~~~~~~~~
+../include/ifp.h:315:77: note: passing argument to parameter 'new_path' here
+  315 | int ifp_rename(struct ifp_device * dev, const char * old_path, const char * new_path);
+      |                                                                             ^
+readwrite.c:100:12: warning: assigning to 'const char *' from 'uint8_t[16384]'
+      (aka 'unsigned char[16384]') converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+  100 |                 realfile = dev->iobuff;
+      |                          ^ ~~~~~~~~~~~
+readwrite.c:104:12: warning: assigning to 'const char *' from 'uint8_t[1024]'
+      (aka 'unsigned char[1024]') converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+  104 |                 realfile = dev->filename;
+      |                          ^ ~~~~~~~~~~~~~
+readwrite.c:108:24: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  108 |         i = ifp_dir_open(dev, dev->dirname);
+      |                               ^~~~~~~~~~~~
+./prim.h:91:56: note: passing argument to parameter 'f' here
+   91 | int ifp_dir_open(struct ifp_device * dev, const char * f);
+      |                                                        ^
+readwrite.c:161:29: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  161 |         i = check_permissions(dev, dev->filename);
+      |                                    ^~~~~~~~~~~~~
+readwrite.c:36:68: note: passing argument to parameter 'f' here
+   36 | static int check_permissions(struct ifp_device * dev, const char * f) {
+      |                                                                    ^
+readwrite.c:163:23: warning: passing 'uint8_t[16384]'
+      (aka 'unsigned char[16384]') to parameter of type 'char *' converts between pointers to integer
+      types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  163 |                 i = mangle_filename(dev->iobuff, dev->filename, IFP_BUFFER_SIZE);
+      |                                     ^~~~~~~~~~~
+readwrite.c:58:35: note: passing argument to parameter 'd' here
+   58 | static int mangle_filename(char * d, const char * s, int n)
+      |                                   ^
+readwrite.c:163:36: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  163 |                 i = mangle_filename(dev->iobuff, dev->filename, IFP_BUFFER_SIZE);
+      |                                                  ^~~~~~~~~~~~~
+readwrite.c:58:51: note: passing argument to parameter 's' here
+   58 | static int mangle_filename(char * d, const char * s, int n)
+      |                                                   ^
+readwrite.c:165:23: warning: passing 'uint8_t[16384]'
+      (aka 'unsigned char[16384]') to parameter of type 'const char *' converts between pointers to
+      integer types where one is of the unique plain 'char' type and the other is not
+      [-Wpointer-sign]
+  165 |                 i = ifp_rename(dev, dev->iobuff, dev->filename);
+      |                                     ^~~~~~~~~~~
+../include/ifp.h:315:54: note: passing argument to parameter 'old_path' here
+  315 | int ifp_rename(struct ifp_device * dev, const char * old_path, const char * new_path);
+      |                                                      ^
+readwrite.c:165:36: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  165 |                 i = ifp_rename(dev, dev->iobuff, dev->filename);
+      |                                                  ^~~~~~~~~~~~~
+../include/ifp.h:315:77: note: passing argument to parameter 'new_path' here
+  315 | int ifp_rename(struct ifp_device * dev, const char * old_path, const char * new_path);
+      |                                                                             ^
+readwrite.c:436:29: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'char *' converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+  436 |         i = ifp_copy_parent_string(dev->dirname, f, IFP_BUFFER_SIZE);
+      |                                    ^~~~~~~~~~~~
+readwrite.c:13:35: note: passing argument to parameter 'p' here
+   13 | int ifp_copy_parent_string(char * p, const char * f, int n) {
+      |                                   ^
+readwrite.c:439:24: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  439 |         i = ifp_dir_open(dev, dev->dirname);
+      |                               ^~~~~~~~~~~~
+./prim.h:91:56: note: passing argument to parameter 'f' here
+   91 | int ifp_dir_open(struct ifp_device * dev, const char * f);
+      |                                                        ^
+readwrite.c:450:29: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  450 |         i = ifp_file_open_new(dev, dev->filename, filesize);
+      |                                    ^~~~~~~~~~~~~
+./prim.h:83:61: note: passing argument to parameter 'f' here
+   83 | int ifp_file_open_new(struct ifp_device * dev, const char * f, int filesize);
+      |                                                             ^
+readwrite.c:473:24: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  473 |         i = ifp_dir_open(dev, dev->dirname);
+      |                               ^~~~~~~~~~~~
+./prim.h:91:56: note: passing argument to parameter 'f' here
+   91 | int ifp_dir_open(struct ifp_device * dev, const char * f);
+      |                                                        ^
+readwrite.c:476:25: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  476 |         i = ifp_file_open(dev, dev->filename);
+      |                                ^~~~~~~~~~~~~
+./prim.h:82:57: note: passing argument to parameter 'f' here
+   82 | int ifp_file_open(struct ifp_device * dev, const char * f);
+      |                                                         ^
+20 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT readwrite.lo -MD -MP -MF .deps/readwrite.Tpo -c readwrite.c -o readwrite.o >/dev/null 2>&1
+mv -f .deps/readwrite.Tpo .deps/readwrite.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT userfile.lo -MD -MP -MF .deps/userfile.Tpo -c -o userfile.lo userfile.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT userfile.lo -MD -MP -MF .deps/userfile.Tpo -c userfile.c  -fno-common -DPIC -o .libs/userfile.o
+userfile.c:1231:17: warning: passing 'unsigned char[4]' to parameter of type
+      'const char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+ 1231 |     if (strncmp(buf, checkdata, FIRMWARE_HEADER_SIZE) != 0) {
+      |                 ^~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:101:49: note: 
+      passing argument to parameter '__s1' here
+  101 | int      strncmp(const char *_LIBC_UNSAFE_INDEXABLE __s1,
+      |                                                     ^
+userfile.c:1231:22: warning: passing 'unsigned char *' to parameter of type
+      'const char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+ 1231 |     if (strncmp(buf, checkdata, FIRMWARE_HEADER_SIZE) != 0) {
+      |                      ^~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:102:38: note: 
+      passing argument to parameter '__s2' here
+  102 |                 const char *_LIBC_UNSAFE_INDEXABLE __s2, size_t __n);
+      |                                                    ^
+userfile.c:1238:13: warning: passing 'unsigned char *' to parameter of type
+      'char *' converts between pointers to integer types where one is of the unique plain 'char'
+      type and the other is not [-Wpointer-sign]
+ 1238 |     strncpy(remotename+1, basename, sizeof(remotename) - 1);
+      |             ^~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:259:42: note: 
+      expanded from macro 'strncpy'
+  259 | #define strncpy(...) __strncpy_chk_func (__VA_ARGS__)
+      |                                          ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:147:28: note: 
+      expanded from macro '__strncpy_chk_func'
+  147 |                 __builtin___strncpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+      |                                          ^~~~
+userfile.c:1239:68: warning: passing 'unsigned char[20]' to parameter of type
+      'const char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+ 1239 |     if ( (i = _ifp_write_stream_progress(dev, fp, (int)st.st_size, remotename, p))) {
+      |                                                                    ^~~~~~~~~~
+userfile.c:138:39: note: passing argument to parameter 'f' here
+  138 |         FILE *src, int filesize, const char *f,
+      |                                              ^
+userfile.c:8:19: warning: unused variable 'rcsid' [-Wunused-const-variable]
+    8 | static const char rcsid[] = "$Id: ";
+      |                   ^~~~~
+5 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT userfile.lo -MD -MP -MF .deps/userfile.Tpo -c userfile.c -o userfile.o >/dev/null 2>&1
+mv -f .deps/userfile.Tpo .deps/userfile.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT error_strings.lo -MD -MP -MF .deps/error_strings.Tpo -c -o error_strings.lo error_strings.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT error_strings.lo -MD -MP -MF .deps/error_strings.Tpo -c error_strings.c  -fno-common -DPIC -o .libs/error_strings.o
+error_strings.c:8:19: warning: unused variable 'rcsid' [-Wunused-const-variable]
+    8 | static const char rcsid[] = "$Id: ";
+      |                   ^~~~~
+1 warning generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT error_strings.lo -MD -MP -MF .deps/error_strings.Tpo -c error_strings.c -o error_strings.o >/dev/null 2>&1
+mv -f .deps/error_strings.Tpo .deps/error_strings.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT tuner.lo -MD -MP -MF .deps/tuner.Tpo -c -o tuner.lo tuner.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT tuner.lo -MD -MP -MF .deps/tuner.Tpo -c tuner.c  -fno-common -DPIC -o .libs/tuner.o
+tuner.c:81:10: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+   81 |         strncpy(bm, callsign, CALL_WIDTH);
+      |                 ^~
+tuner.c:8:19: warning: unused variable 'rcsid' [-Wunused-const-variable]
+    8 | static const char rcsid[] = "$Id: ";
+      |                   ^~~~~
+2 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT tuner.lo -MD -MP -MF .deps/tuner.Tpo -c tuner.c -o tuner.o >/dev/null 2>&1
+mv -f .deps/tuner.Tpo .deps/tuner.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.  -I../include    -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_iconv_la-ifp_os_iconv.lo -MD -MP -MF .deps/libifp_os_iconv_la-ifp_os_iconv.Tpo -c -o libifp_os_iconv_la-ifp_os_iconv.lo `test -f 'ifp_os_iconv.c' || echo './'`ifp_os_iconv.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_iconv_la-ifp_os_iconv.lo -MD -MP -MF .deps/libifp_os_iconv_la-ifp_os_iconv.Tpo -c ifp_os_iconv.c  -fno-common -DPIC -o .libs/libifp_os_iconv_la-ifp_os_iconv.o
+ifp_os_iconv.c:50:68: warning: format specifies type 'int' but the argument has
+      type 'size_t' (aka 'unsigned long') [-Wformat]
+   50 |                 ifp_err_i(i, "problem converting, i_n is %d, o_n is %d, r = %d", i_n, o_n, r);
+      |                                                          ~~                      ^~~
+      |                                                          %zu
+../include/ifp.h:438:64: note: expanded from macro 'ifp_err_i'
+  438 | #define ifp_err_i(i, fmt, arg...) ifp_err("err=%d. " fmt, i, ##arg)
+      |                                                      ~~~       ^~~
+../include/ifp.h:436:76: note: expanded from macro 'ifp_err'
+  436 | #define ifp_err(fmt, arg...) ifp_os_err("[%s] " fmt "\n", __FUNCTION__ , ##arg)
+      |                                                 ~~~                        ^~~
+../include/ifp.h:432:65: note: expanded from macro 'ifp_os_err'
+  432 | #define ifp_os_err(fmt, arg...) fprintf(stderr, "err:  " fmt, ##arg)
+      |                                                          ~~~    ^~~
+ifp_os_iconv.c:50:73: warning: format specifies type 'int' but the argument has
+      type 'size_t' (aka 'unsigned long') [-Wformat]
+   50 |                 ifp_err_i(i, "problem converting, i_n is %d, o_n is %d, r = %d", i_n, o_n, r);
+      |                                                                     ~~                ^~~
+      |                                                                     %zu
+../include/ifp.h:438:64: note: expanded from macro 'ifp_err_i'
+  438 | #define ifp_err_i(i, fmt, arg...) ifp_err("err=%d. " fmt, i, ##arg)
+      |                                                      ~~~       ^~~
+../include/ifp.h:436:76: note: expanded from macro 'ifp_err'
+  436 | #define ifp_err(fmt, arg...) ifp_os_err("[%s] " fmt "\n", __FUNCTION__ , ##arg)
+      |                                                 ~~~                        ^~~
+../include/ifp.h:432:65: note: expanded from macro 'ifp_os_err'
+  432 | #define ifp_os_err(fmt, arg...) fprintf(stderr, "err:  " fmt, ##arg)
+      |                                                          ~~~    ^~~
+ifp_os_iconv.c:50:78: warning: format specifies type 'int' but the argument has
+      type 'size_t' (aka 'unsigned long') [-Wformat]
+   50 |                 ifp_err_i(i, "problem converting, i_n is %d, o_n is %d, r = %d", i_n, o_n, r);
+      |                                                                             ~~             ^
+      |                                                                             %zu
+../include/ifp.h:438:64: note: expanded from macro 'ifp_err_i'
+  438 | #define ifp_err_i(i, fmt, arg...) ifp_err("err=%d. " fmt, i, ##arg)
+      |                                                      ~~~       ^~~
+../include/ifp.h:436:76: note: expanded from macro 'ifp_err'
+  436 | #define ifp_err(fmt, arg...) ifp_os_err("[%s] " fmt "\n", __FUNCTION__ , ##arg)
+      |                                                 ~~~                        ^~~
+../include/ifp.h:432:65: note: expanded from macro 'ifp_os_err'
+  432 | #define ifp_os_err(fmt, arg...) fprintf(stderr, "err:  " fmt, ##arg)
+      |                                                          ~~~    ^~~
+3 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_iconv_la-ifp_os_iconv.lo -MD -MP -MF .deps/libifp_os_iconv_la-ifp_os_iconv.Tpo -c ifp_os_iconv.c -o libifp_os_iconv_la-ifp_os_iconv.o >/dev/null 2>&1
+mv -f .deps/libifp_os_iconv_la-ifp_os_iconv.Tpo .deps/libifp_os_iconv_la-ifp_os_iconv.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wno-unused-parameter   -o libifp_os_iconv.la  libifp_os_iconv_la-ifp_os_iconv.lo  
+libtool: link: ar cr .libs/libifp_os_iconv.a .libs/libifp_os_iconv_la-ifp_os_iconv.o 
+libtool: link: ranlib .libs/libifp_os_iconv.a
+libtool: link: ( cd ".libs" && rm -f "libifp_os_iconv.la" && ln -s "../libifp_os_iconv.la" "libifp_os_iconv.la" )
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.  -I../include    -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_libusb_la-ifp_os_libusb.lo -MD -MP -MF .deps/libifp_os_libusb_la-ifp_os_libusb.Tpo -c -o libifp_os_libusb_la-ifp_os_libusb.lo `test -f 'ifp_os_libusb.c' || echo './'`ifp_os_libusb.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_libusb_la-ifp_os_libusb.lo -MD -MP -MF .deps/libifp_os_libusb_la-ifp_os_libusb.Tpo -c ifp_os_libusb.c  -fno-common -DPIC -o .libs/libifp_os_libusb_la-ifp_os_libusb.o
+ifp_os_libusb.c:79:66: warning: passing 'uint8_t[8]' (aka 'unsigned char[8]') to
+      parameter of type 'char *' converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+   79 |                 i = usb_control_msg(usbdev, IFP_REQ_TYPE, command, arg1, arg2, ctl, c_size,
+      |                                                                                ^~~
+/usr/local/include/usb.h:330:30: note: passing argument to parameter 'bytes'
+      here
+  330 |         int value, int index, char *bytes, int size, int timeout);
+      |                                     ^
+1 warning generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_libusb_la-ifp_os_libusb.lo -MD -MP -MF .deps/libifp_os_libusb_la-ifp_os_libusb.Tpo -c ifp_os_libusb.c -o libifp_os_libusb_la-ifp_os_libusb.o >/dev/null 2>&1
+mv -f .deps/libifp_os_libusb_la-ifp_os_libusb.Tpo .deps/libifp_os_libusb_la-ifp_os_libusb.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wno-unused-parameter   -o libifp_os_libusb.la  libifp_os_libusb_la-ifp_os_libusb.lo  
+libtool: link: ar cr .libs/libifp_os_libusb.a .libs/libifp_os_libusb_la-ifp_os_libusb.o 
+libtool: link: ranlib .libs/libifp_os_libusb.a
+libtool: link: ( cd ".libs" && rm -f "libifp_os_libusb.la" && ln -s "../libifp_os_libusb.la" "libifp_os_libusb.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wno-unused-parameter -version-info 5:4:1 -no-undefined  -liconv  -o libifp.la -rpath /usr/local/lib prim.lo comp.lo readwrite.lo userfile.lo error_strings.lo tuner.lo libifp_os_iconv.la libifp_os_libusb.la 
+libtool: link: gcc -dynamiclib  -o .libs/libifp.4.dylib  .libs/prim.o .libs/comp.o .libs/readwrite.o .libs/userfile.o .libs/error_strings.o .libs/tuner.o   -Wl,-force_load,./.libs/libifp_os_iconv.a -Wl,-force_load,./.libs/libifp_os_libusb.a  -liconv  -g -O2   -install_name  /usr/local/lib/libifp.4.dylib -compatibility_version 6 -current_version 6.4 
+Undefined symbols for architecture x86_64:
+  "_usb_bulk_read", referenced from:
+      _ifp_os_pop in libifp_os_libusb.a[2](libifp_os_libusb_la-ifp_os_libusb.o)
+  "_usb_bulk_write", referenced from:
+      _ifp_os_push in libifp_os_libusb.a[2](libifp_os_libusb_la-ifp_os_libusb.o)
+  "_usb_close", referenced from:
+      _ifp_release_device in libifp_os_libusb.a[2](libifp_os_libusb_la-ifp_os_libusb.o)
+  "_usb_control_msg", referenced from:
+      _ifp_os_control_send in libifp_os_libusb.a[2](libifp_os_libusb_la-ifp_os_libusb.o)
+  "_usb_device", referenced from:
+      _ifp_os_init in libifp_os_libusb.a[2](libifp_os_libusb_la-ifp_os_libusb.o)
+  "_usb_find_busses", referenced from:
+      _ifp_find_device in libifp_os_libusb.a[2](libifp_os_libusb_la-ifp_os_libusb.o)
+  "_usb_find_devices", referenced from:
+      _ifp_find_device in libifp_os_libusb.a[2](libifp_os_libusb_la-ifp_os_libusb.o)
+  "_usb_get_busses", referenced from:
+      _ifp_find_device in libifp_os_libusb.a[2](libifp_os_libusb_la-ifp_os_libusb.o)
+  "_usb_open", referenced from:
+      _ifp_find_device in libifp_os_libusb.a[2](libifp_os_libusb_la-ifp_os_libusb.o)
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [libifp.la] Error 1
+make: *** [all-recursive] Error 1
+jarvis@MacBookPro libifp-1.0.1.0 % make clean
+Making clean in src
+rm -f  libifp.la
+rm -f ./so_locations
+rm -rf .libs _libs
+rm -f  libifp_os_iconv.la libifp_os_libusb.la
+rm -f ./so_locations
+rm -f *.o
+rm -f *.lo
+Making clean in examples
+rm -f  ifpline 
+test -z "" || rm -f  ifpline
+rm -f  selftest
+test -z "" || rm -f  selftest
+rm -rf .libs _libs
+rm -f *.o
+rm -f  selftest.log
+rm -f  selftest.trs
+rm -f  test-suite.log
+rm -f *.lo
+rm -rf .libs _libs
+rm -f *.lo
+jarvis@MacBookPro libifp-1.0.1.0 % LDFLAGS="-L$(brew --prefix libusb-compat)/lib" LIBS="-lusb" ./configure
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether sleep supports fractional seconds... yes
+checking filesystem timestamp resolution... 2
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... mkdir -p
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking xargs -n works... yes
+checking whether UID '501' is supported by ustar format... yes
+checking whether GID '20' is supported by ustar format... yes
+checking how to create a ustar tar archive... gnutar
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to enable C11 features... none needed
+checking whether gcc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of gcc... gcc3
+checking build system type... x86_64-apple-darwin25.4.0
+checking host system type... x86_64-apple-darwin25.4.0
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /Library/Developer/CommandLineTools/usr/bin/ld
+checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... 786432
+checking how to convert x86_64-apple-darwin25.4.0 file names to x86_64-apple-darwin25.4.0 format... func_convert_file_noop
+checking how to convert x86_64-apple-darwin25.4.0 file names to toolchain format... func_convert_file_noop
+checking for /Library/Developer/CommandLineTools/usr/bin/ld option to reload object files... -r
+checking for file... file
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... ld: warning: -single_module is obsolete
+no
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... yes
+checking for gcc option to produce PIC... -fno-common -DPIC
+checking if gcc PIC flag -fno-common -DPIC works... yes
+checking if gcc static flag -static works... no
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/Library/Developer/CommandLineTools/usr/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... darwin25.4.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking whether byte ordering is bigendian... no
+checking for ld... /Library/Developer/CommandLineTools/usr/bin/ld
+checking if the linker (/Library/Developer/CommandLineTools/usr/bin/ld) is GNU ld... no
+checking for shared library run path origin... done
+checking 32-bit host C ABI... no
+checking how to run the C preprocessor... gcc -E
+checking for egrep -e... (cached) /usr/bin/grep -E
+checking for ELF binary format... no
+checking for the common suffixes of directories in the library search path... lib,lib,lib
+checking for iconv... yes
+checking for working iconv... yes
+checking how to link with libiconv... -liconv
+checking whether iconv is compatible with its POSIX signature... yes
+checking libusb... done
+checking for usb.h... yes
+checking for usb_init in -lusb... yes
+checking for strncasecmp... yes
+checking for inttypes.h... (cached) yes
+checking for stdio.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for wchar.h... yes
+checking for string.h... (cached) yes
+checking for time.h... yes
+checking for fts.h... yes
+checking for iconv.h... yes
+checking for inline... inline
+checking if we should build the examples... no
+checking for doxygen... no
+checking kernel source code... no
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating docs/Makefile
+config.status: creating dpkg/Makefile
+config.status: creating docs/doxygen.cfg
+config.status: creating examples/Makefile
+config.status: creating kbuild/Makefile
+config.status: creating src/Makefile
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+-----------------------------------------------------
+configuration complete
+	libifp:               yes
+	linux kernel module:  no
+	examples:             no
+	documentation:        no
+-----------------------------------------------------
+type 'make' to build
+
+jarvis@MacBookPro libifp-1.0.1.0 % make
+Making all in src
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT prim.lo -MD -MP -MF .deps/prim.Tpo -c -o prim.lo prim.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT prim.lo -MD -MP -MF .deps/prim.Tpo -c prim.c  -fno-common -DPIC -o .libs/prim.o
+prim.c:286:26: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+  286 |         i = ifp_locale_to_utf16(buf, IFP_BUFFER_SIZE, s, strlen(s)+1);
+      |                                 ^~~
+./ifp_os.h:135:32: note: passing argument to parameter 'o' here
+  135 | int ifp_locale_to_utf16(char * o, int max_o, const char * i, int max_i);
+      |                                ^
+prim.c:315:32: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  315 |         i = ifp_utf16_to_locale(s, n, buf, IFP_BUFFER_SIZE);
+      |                                       ^~~
+./ifp_os.h:136:59: note: passing argument to parameter 'i' here
+  136 | int ifp_utf16_to_locale(char * o, int max_o, const char * i, int max_i);
+      |                                                           ^
+2 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT prim.lo -MD -MP -MF .deps/prim.Tpo -c prim.c -o prim.o >/dev/null 2>&1
+mv -f .deps/prim.Tpo .deps/prim.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT comp.lo -MD -MP -MF .deps/comp.Tpo -c -o comp.lo comp.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT comp.lo -MD -MP -MF .deps/comp.Tpo -c comp.c  -fno-common -DPIC -o .libs/comp.o
+comp.c:26:12: warning: initializing 'char *' with an expression of type
+      'uint8_t[1024]' (aka 'unsigned char[1024]') converts between pointers to integer types where
+      one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+   26 |     char * p = dev->b2;
+      |            ^   ~~~~~~~
+comp.c:156:33: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+  156 |                 ret = ifp_dir_next_debug(dev, utf8_buf, IFP_BUFFER_SIZE,
+      |                                               ^~~~~~~~
+./prim.h:102:56: note: passing argument to parameter 's' here
+  102 | int ifp_dir_next_debug(struct ifp_device * dev, char * s, int n, int mode,
+      |                                                        ^
+comp.c:166:12: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  166 |                                 strlen(utf8_buf),
+      |                                        ^~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:96:28: note: 
+      passing argument to parameter '__s' here
+   96 | size_t   strlen(const char *__s);
+      |                             ^
+comp.c:165:29: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  165 |                         i = callbk(context, ret, utf8_buf,
+      |                                                  ^~~~~~~~
+comp.c:303:14: warning: variable length array folded to constant array as an
+      extension [-Wgnu-folding-constant]
+  303 |         uint8_t tmp[data_ptr_size];
+      |                     ^~~~~~~~~~~~~
+comp.c:370:9: warning: initializing 'char *' with an expression of type
+      'uint8_t[1024]' (aka 'unsigned char[1024]') converts between pointers to integer types where
+      one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  370 |         char * b = dev->b3;
+      |                ^   ~~~~~~~
+comp.c:398:9: warning: initializing 'char *' with an expression of type
+      'uint8_t[1024]' (aka 'unsigned char[1024]') converts between pointers to integer types where
+      one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  398 |         char * b = dev->b3;
+      |                ^   ~~~~~~~
+comp.c:496:25: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  496 |         i = ifp_file_open(dev, buf);
+      |                                ^~~
+./prim.h:82:57: note: passing argument to parameter 'f' here
+   82 | int ifp_file_open(struct ifp_device * dev, const char * f);
+      |                                                         ^
+comp.c:545:22: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  545 |                                         dirname, dsize, utf8_buf,
+      |                                                         ^~~~~~~~
+comp.c:476:15: note: passing argument to parameter 'f' here
+  476 |         const char * f, int fsize)
+      |                      ^
+comp.c:553:29: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'const char *' converts between pointers to integer types where one is of the unique
+      plain 'char' type and the other is not [-Wpointer-sign]
+  553 |                         i = callbk(context, ret, utf8_buf, filesize);
+      |                                                  ^~~~~~~~
+comp.c:650:9: warning: initializing 'char *' with an expression of type
+      'uint8_t[1024]' (aka 'unsigned char[1024]') converts between pointers to integer types where
+      one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  650 |         char * b = dev->b2;
+      |                ^   ~~~~~~~
+11 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT comp.lo -MD -MP -MF .deps/comp.Tpo -c comp.c -o comp.o >/dev/null 2>&1
+mv -f .deps/comp.Tpo .deps/comp.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT readwrite.lo -MD -MP -MF .deps/readwrite.Tpo -c -o readwrite.lo readwrite.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT readwrite.lo -MD -MP -MF .deps/readwrite.Tpo -c readwrite.c  -fno-common -DPIC -o .libs/readwrite.o
+readwrite.c:87:10: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'char *' converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+   87 |         strncpy(dev->filename, f, IFP_BUFFER_SIZE);
+      |                 ^~~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:259:42: note: 
+      expanded from macro 'strncpy'
+  259 | #define strncpy(...) __strncpy_chk_func (__VA_ARGS__)
+      |                                          ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:147:28: note: 
+      expanded from macro '__strncpy_chk_func'
+  147 |                 __builtin___strncpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+      |                                          ^~~~
+readwrite.c:88:29: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'char *' converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+   88 |         i = ifp_copy_parent_string(dev->dirname, f, IFP_BUFFER_SIZE);
+      |                                    ^~~~~~~~~~~~
+readwrite.c:13:35: note: passing argument to parameter 'p' here
+   13 | int ifp_copy_parent_string(char * p, const char * f, int n) {
+      |                                   ^
+readwrite.c:91:29: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+   91 |         i = check_permissions(dev, dev->filename);
+      |                                    ^~~~~~~~~~~~~
+readwrite.c:36:68: note: passing argument to parameter 'f' here
+   36 | static int check_permissions(struct ifp_device * dev, const char * f) {
+      |                                                                    ^
+readwrite.c:94:23: warning: passing 'uint8_t[16384]'
+      (aka 'unsigned char[16384]') to parameter of type 'char *' converts between pointers to integer
+      types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+   94 |                 i = mangle_filename(dev->iobuff, dev->filename, IFP_BUFFER_SIZE);
+      |                                     ^~~~~~~~~~~
+readwrite.c:58:35: note: passing argument to parameter 'd' here
+   58 | static int mangle_filename(char * d, const char * s, int n)
+      |                                   ^
+readwrite.c:94:36: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+   94 |                 i = mangle_filename(dev->iobuff, dev->filename, IFP_BUFFER_SIZE);
+      |                                                  ^~~~~~~~~~~~~
+readwrite.c:58:51: note: passing argument to parameter 's' here
+   58 | static int mangle_filename(char * d, const char * s, int n)
+      |                                                   ^
+readwrite.c:97:23: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+   97 |                 i = ifp_rename(dev, dev->filename, dev->iobuff);
+      |                                     ^~~~~~~~~~~~~
+../include/ifp.h:315:54: note: passing argument to parameter 'old_path' here
+  315 | int ifp_rename(struct ifp_device * dev, const char * old_path, const char * new_path);
+      |                                                      ^
+readwrite.c:97:38: warning: passing 'uint8_t[16384]'
+      (aka 'unsigned char[16384]') to parameter of type 'const char *' converts between pointers to
+      integer types where one is of the unique plain 'char' type and the other is not
+      [-Wpointer-sign]
+   97 |                 i = ifp_rename(dev, dev->filename, dev->iobuff);
+      |                                                    ^~~~~~~~~~~
+../include/ifp.h:315:77: note: passing argument to parameter 'new_path' here
+  315 | int ifp_rename(struct ifp_device * dev, const char * old_path, const char * new_path);
+      |                                                                             ^
+readwrite.c:100:12: warning: assigning to 'const char *' from 'uint8_t[16384]'
+      (aka 'unsigned char[16384]') converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+  100 |                 realfile = dev->iobuff;
+      |                          ^ ~~~~~~~~~~~
+readwrite.c:104:12: warning: assigning to 'const char *' from 'uint8_t[1024]'
+      (aka 'unsigned char[1024]') converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+  104 |                 realfile = dev->filename;
+      |                          ^ ~~~~~~~~~~~~~
+readwrite.c:108:24: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  108 |         i = ifp_dir_open(dev, dev->dirname);
+      |                               ^~~~~~~~~~~~
+./prim.h:91:56: note: passing argument to parameter 'f' here
+   91 | int ifp_dir_open(struct ifp_device * dev, const char * f);
+      |                                                        ^
+readwrite.c:161:29: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  161 |         i = check_permissions(dev, dev->filename);
+      |                                    ^~~~~~~~~~~~~
+readwrite.c:36:68: note: passing argument to parameter 'f' here
+   36 | static int check_permissions(struct ifp_device * dev, const char * f) {
+      |                                                                    ^
+readwrite.c:163:23: warning: passing 'uint8_t[16384]'
+      (aka 'unsigned char[16384]') to parameter of type 'char *' converts between pointers to integer
+      types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+  163 |                 i = mangle_filename(dev->iobuff, dev->filename, IFP_BUFFER_SIZE);
+      |                                     ^~~~~~~~~~~
+readwrite.c:58:35: note: passing argument to parameter 'd' here
+   58 | static int mangle_filename(char * d, const char * s, int n)
+      |                                   ^
+readwrite.c:163:36: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  163 |                 i = mangle_filename(dev->iobuff, dev->filename, IFP_BUFFER_SIZE);
+      |                                                  ^~~~~~~~~~~~~
+readwrite.c:58:51: note: passing argument to parameter 's' here
+   58 | static int mangle_filename(char * d, const char * s, int n)
+      |                                                   ^
+readwrite.c:165:23: warning: passing 'uint8_t[16384]'
+      (aka 'unsigned char[16384]') to parameter of type 'const char *' converts between pointers to
+      integer types where one is of the unique plain 'char' type and the other is not
+      [-Wpointer-sign]
+  165 |                 i = ifp_rename(dev, dev->iobuff, dev->filename);
+      |                                     ^~~~~~~~~~~
+../include/ifp.h:315:54: note: passing argument to parameter 'old_path' here
+  315 | int ifp_rename(struct ifp_device * dev, const char * old_path, const char * new_path);
+      |                                                      ^
+readwrite.c:165:36: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  165 |                 i = ifp_rename(dev, dev->iobuff, dev->filename);
+      |                                                  ^~~~~~~~~~~~~
+../include/ifp.h:315:77: note: passing argument to parameter 'new_path' here
+  315 | int ifp_rename(struct ifp_device * dev, const char * old_path, const char * new_path);
+      |                                                                             ^
+readwrite.c:436:29: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'char *' converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+  436 |         i = ifp_copy_parent_string(dev->dirname, f, IFP_BUFFER_SIZE);
+      |                                    ^~~~~~~~~~~~
+readwrite.c:13:35: note: passing argument to parameter 'p' here
+   13 | int ifp_copy_parent_string(char * p, const char * f, int n) {
+      |                                   ^
+readwrite.c:439:24: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  439 |         i = ifp_dir_open(dev, dev->dirname);
+      |                               ^~~~~~~~~~~~
+./prim.h:91:56: note: passing argument to parameter 'f' here
+   91 | int ifp_dir_open(struct ifp_device * dev, const char * f);
+      |                                                        ^
+readwrite.c:450:29: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  450 |         i = ifp_file_open_new(dev, dev->filename, filesize);
+      |                                    ^~~~~~~~~~~~~
+./prim.h:83:61: note: passing argument to parameter 'f' here
+   83 | int ifp_file_open_new(struct ifp_device * dev, const char * f, int filesize);
+      |                                                             ^
+readwrite.c:473:24: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  473 |         i = ifp_dir_open(dev, dev->dirname);
+      |                               ^~~~~~~~~~~~
+./prim.h:91:56: note: passing argument to parameter 'f' here
+   91 | int ifp_dir_open(struct ifp_device * dev, const char * f);
+      |                                                        ^
+readwrite.c:476:25: warning: passing 'uint8_t[1024]' (aka 'unsigned char[1024]')
+      to parameter of type 'const char *' converts between pointers to integer types where one is of
+      the unique plain 'char' type and the other is not [-Wpointer-sign]
+  476 |         i = ifp_file_open(dev, dev->filename);
+      |                                ^~~~~~~~~~~~~
+./prim.h:82:57: note: passing argument to parameter 'f' here
+   82 | int ifp_file_open(struct ifp_device * dev, const char * f);
+      |                                                         ^
+20 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT readwrite.lo -MD -MP -MF .deps/readwrite.Tpo -c readwrite.c -o readwrite.o >/dev/null 2>&1
+mv -f .deps/readwrite.Tpo .deps/readwrite.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT userfile.lo -MD -MP -MF .deps/userfile.Tpo -c -o userfile.lo userfile.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT userfile.lo -MD -MP -MF .deps/userfile.Tpo -c userfile.c  -fno-common -DPIC -o .libs/userfile.o
+userfile.c:1231:17: warning: passing 'unsigned char[4]' to parameter of type
+      'const char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+ 1231 |     if (strncmp(buf, checkdata, FIRMWARE_HEADER_SIZE) != 0) {
+      |                 ^~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:101:49: note: 
+      passing argument to parameter '__s1' here
+  101 | int      strncmp(const char *_LIBC_UNSAFE_INDEXABLE __s1,
+      |                                                     ^
+userfile.c:1231:22: warning: passing 'unsigned char *' to parameter of type
+      'const char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+ 1231 |     if (strncmp(buf, checkdata, FIRMWARE_HEADER_SIZE) != 0) {
+      |                      ^~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/_string.h:102:38: note: 
+      passing argument to parameter '__s2' here
+  102 |                 const char *_LIBC_UNSAFE_INDEXABLE __s2, size_t __n);
+      |                                                    ^
+userfile.c:1238:13: warning: passing 'unsigned char *' to parameter of type
+      'char *' converts between pointers to integer types where one is of the unique plain 'char'
+      type and the other is not [-Wpointer-sign]
+ 1238 |     strncpy(remotename+1, basename, sizeof(remotename) - 1);
+      |             ^~~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:259:42: note: 
+      expanded from macro 'strncpy'
+  259 | #define strncpy(...) __strncpy_chk_func (__VA_ARGS__)
+      |                                          ^~~~~~~~~~~
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/secure/_string.h:147:28: note: 
+      expanded from macro '__strncpy_chk_func'
+  147 |                 __builtin___strncpy_chk (dest, __VA_ARGS__, __darwin_obsz (dest))
+      |                                          ^~~~
+userfile.c:1239:68: warning: passing 'unsigned char[20]' to parameter of type
+      'const char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+ 1239 |     if ( (i = _ifp_write_stream_progress(dev, fp, (int)st.st_size, remotename, p))) {
+      |                                                                    ^~~~~~~~~~
+userfile.c:138:39: note: passing argument to parameter 'f' here
+  138 |         FILE *src, int filesize, const char *f,
+      |                                              ^
+userfile.c:8:19: warning: unused variable 'rcsid' [-Wunused-const-variable]
+    8 | static const char rcsid[] = "$Id: ";
+      |                   ^~~~~
+5 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT userfile.lo -MD -MP -MF .deps/userfile.Tpo -c userfile.c -o userfile.o >/dev/null 2>&1
+mv -f .deps/userfile.Tpo .deps/userfile.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT error_strings.lo -MD -MP -MF .deps/error_strings.Tpo -c -o error_strings.lo error_strings.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT error_strings.lo -MD -MP -MF .deps/error_strings.Tpo -c error_strings.c  -fno-common -DPIC -o .libs/error_strings.o
+error_strings.c:8:19: warning: unused variable 'rcsid' [-Wunused-const-variable]
+    8 | static const char rcsid[] = "$Id: ";
+      |                   ^~~~~
+1 warning generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT error_strings.lo -MD -MP -MF .deps/error_strings.Tpo -c error_strings.c -o error_strings.o >/dev/null 2>&1
+mv -f .deps/error_strings.Tpo .deps/error_strings.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include   -g -O2 -Wall -W -Wno-unused-parameter -MT tuner.lo -MD -MP -MF .deps/tuner.Tpo -c -o tuner.lo tuner.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT tuner.lo -MD -MP -MF .deps/tuner.Tpo -c tuner.c  -fno-common -DPIC -o .libs/tuner.o
+tuner.c:81:10: warning: passing 'uint8_t *' (aka 'unsigned char *') to parameter
+      of type 'char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+   81 |         strncpy(bm, callsign, CALL_WIDTH);
+      |                 ^~
+tuner.c:8:19: warning: unused variable 'rcsid' [-Wunused-const-variable]
+    8 | static const char rcsid[] = "$Id: ";
+      |                   ^~~~~
+2 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT tuner.lo -MD -MP -MF .deps/tuner.Tpo -c tuner.c -o tuner.o >/dev/null 2>&1
+mv -f .deps/tuner.Tpo .deps/tuner.Plo
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.  -I../include    -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_iconv_la-ifp_os_iconv.lo -MD -MP -MF .deps/libifp_os_iconv_la-ifp_os_iconv.Tpo -c -o libifp_os_iconv_la-ifp_os_iconv.lo `test -f 'ifp_os_iconv.c' || echo './'`ifp_os_iconv.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_iconv_la-ifp_os_iconv.lo -MD -MP -MF .deps/libifp_os_iconv_la-ifp_os_iconv.Tpo -c ifp_os_iconv.c  -fno-common -DPIC -o .libs/libifp_os_iconv_la-ifp_os_iconv.o
+ifp_os_iconv.c:50:68: warning: format specifies type 'int' but the argument has
+      type 'size_t' (aka 'unsigned long') [-Wformat]
+   50 |                 ifp_err_i(i, "problem converting, i_n is %d, o_n is %d, r = %d", i_n, o_n, r);
+      |                                                          ~~                      ^~~
+      |                                                          %zu
+../include/ifp.h:438:64: note: expanded from macro 'ifp_err_i'
+  438 | #define ifp_err_i(i, fmt, arg...) ifp_err("err=%d. " fmt, i, ##arg)
+      |                                                      ~~~       ^~~
+../include/ifp.h:436:76: note: expanded from macro 'ifp_err'
+  436 | #define ifp_err(fmt, arg...) ifp_os_err("[%s] " fmt "\n", __FUNCTION__ , ##arg)
+      |                                                 ~~~                        ^~~
+../include/ifp.h:432:65: note: expanded from macro 'ifp_os_err'
+  432 | #define ifp_os_err(fmt, arg...) fprintf(stderr, "err:  " fmt, ##arg)
+      |                                                          ~~~    ^~~
+ifp_os_iconv.c:50:73: warning: format specifies type 'int' but the argument has
+      type 'size_t' (aka 'unsigned long') [-Wformat]
+   50 |                 ifp_err_i(i, "problem converting, i_n is %d, o_n is %d, r = %d", i_n, o_n, r);
+      |                                                                     ~~                ^~~
+      |                                                                     %zu
+../include/ifp.h:438:64: note: expanded from macro 'ifp_err_i'
+  438 | #define ifp_err_i(i, fmt, arg...) ifp_err("err=%d. " fmt, i, ##arg)
+      |                                                      ~~~       ^~~
+../include/ifp.h:436:76: note: expanded from macro 'ifp_err'
+  436 | #define ifp_err(fmt, arg...) ifp_os_err("[%s] " fmt "\n", __FUNCTION__ , ##arg)
+      |                                                 ~~~                        ^~~
+../include/ifp.h:432:65: note: expanded from macro 'ifp_os_err'
+  432 | #define ifp_os_err(fmt, arg...) fprintf(stderr, "err:  " fmt, ##arg)
+      |                                                          ~~~    ^~~
+ifp_os_iconv.c:50:78: warning: format specifies type 'int' but the argument has
+      type 'size_t' (aka 'unsigned long') [-Wformat]
+   50 |                 ifp_err_i(i, "problem converting, i_n is %d, o_n is %d, r = %d", i_n, o_n, r);
+      |                                                                             ~~             ^
+      |                                                                             %zu
+../include/ifp.h:438:64: note: expanded from macro 'ifp_err_i'
+  438 | #define ifp_err_i(i, fmt, arg...) ifp_err("err=%d. " fmt, i, ##arg)
+      |                                                      ~~~       ^~~
+../include/ifp.h:436:76: note: expanded from macro 'ifp_err'
+  436 | #define ifp_err(fmt, arg...) ifp_os_err("[%s] " fmt "\n", __FUNCTION__ , ##arg)
+      |                                                 ~~~                        ^~~
+../include/ifp.h:432:65: note: expanded from macro 'ifp_os_err'
+  432 | #define ifp_os_err(fmt, arg...) fprintf(stderr, "err:  " fmt, ##arg)
+      |                                                          ~~~    ^~~
+3 warnings generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_iconv_la-ifp_os_iconv.lo -MD -MP -MF .deps/libifp_os_iconv_la-ifp_os_iconv.Tpo -c ifp_os_iconv.c -o libifp_os_iconv_la-ifp_os_iconv.o >/dev/null 2>&1
+mv -f .deps/libifp_os_iconv_la-ifp_os_iconv.Tpo .deps/libifp_os_iconv_la-ifp_os_iconv.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wno-unused-parameter  -L/usr/local/opt/libusb-compat/lib -o libifp_os_iconv.la  libifp_os_iconv_la-ifp_os_iconv.lo  -lusb 
+libtool: link: ar cr .libs/libifp_os_iconv.a .libs/libifp_os_iconv_la-ifp_os_iconv.o 
+libtool: link: ranlib .libs/libifp_os_iconv.a
+libtool: link: ( cd ".libs" && rm -f "libifp_os_iconv.la" && ln -s "../libifp_os_iconv.la" "libifp_os_iconv.la" )
+/bin/sh ../libtool  --tag=CC   --mode=compile gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.  -I../include    -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_libusb_la-ifp_os_libusb.lo -MD -MP -MF .deps/libifp_os_libusb_la-ifp_os_libusb.Tpo -c -o libifp_os_libusb_la-ifp_os_libusb.lo `test -f 'ifp_os_libusb.c' || echo './'`ifp_os_libusb.c
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_libusb_la-ifp_os_libusb.lo -MD -MP -MF .deps/libifp_os_libusb_la-ifp_os_libusb.Tpo -c ifp_os_libusb.c  -fno-common -DPIC -o .libs/libifp_os_libusb_la-ifp_os_libusb.o
+ifp_os_libusb.c:79:66: warning: passing 'uint8_t[8]' (aka 'unsigned char[8]') to
+      parameter of type 'char *' converts between pointers to integer types where one is of the
+      unique plain 'char' type and the other is not [-Wpointer-sign]
+   79 |                 i = usb_control_msg(usbdev, IFP_REQ_TYPE, command, arg1, arg2, ctl, c_size,
+      |                                                                                ^~~
+/usr/local/include/usb.h:330:30: note: passing argument to parameter 'bytes'
+      here
+  330 |         int value, int index, char *bytes, int size, int timeout);
+      |                                     ^
+1 warning generated.
+libtool: compile:  gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" "-DPACKAGE_STRING=\"libifp 1.0.1.0\"" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I. -I../include -g -O2 -Wall -W -Wno-unused-parameter -MT libifp_os_libusb_la-ifp_os_libusb.lo -MD -MP -MF .deps/libifp_os_libusb_la-ifp_os_libusb.Tpo -c ifp_os_libusb.c -o libifp_os_libusb_la-ifp_os_libusb.o >/dev/null 2>&1
+mv -f .deps/libifp_os_libusb_la-ifp_os_libusb.Tpo .deps/libifp_os_libusb_la-ifp_os_libusb.Plo
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wno-unused-parameter  -L/usr/local/opt/libusb-compat/lib -o libifp_os_libusb.la  libifp_os_libusb_la-ifp_os_libusb.lo  -lusb 
+libtool: link: ar cr .libs/libifp_os_libusb.a .libs/libifp_os_libusb_la-ifp_os_libusb.o 
+libtool: link: ranlib .libs/libifp_os_libusb.a
+libtool: link: ( cd ".libs" && rm -f "libifp_os_libusb.la" && ln -s "../libifp_os_libusb.la" "libifp_os_libusb.la" )
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wno-unused-parameter -version-info 5:4:1 -no-undefined  -liconv -L/usr/local/opt/libusb-compat/lib -o libifp.la -rpath /usr/local/lib prim.lo comp.lo readwrite.lo userfile.lo error_strings.lo tuner.lo libifp_os_iconv.la libifp_os_libusb.la -lusb 
+libtool: link: gcc -dynamiclib  -o .libs/libifp.4.dylib  .libs/prim.o .libs/comp.o .libs/readwrite.o .libs/userfile.o .libs/error_strings.o .libs/tuner.o   -Wl,-force_load,./.libs/libifp_os_iconv.a -Wl,-force_load,./.libs/libifp_os_libusb.a  -liconv -L/usr/local/opt/libusb-compat/lib -lusb  -g -O2   -install_name  /usr/local/lib/libifp.4.dylib -compatibility_version 6 -current_version 6.4 
+libtool: link: (cd ".libs" && rm -f "libifp.dylib" && ln -s "libifp.4.dylib" "libifp.dylib")
+libtool: link: (cd .libs/libifp.lax/libifp_os_iconv.a && ar x "/Users/jarvis/Downloads/libifp-1.0.1.0/src/./.libs/libifp_os_iconv.a")
+libtool: link: (cd .libs/libifp.lax/libifp_os_libusb.a && ar x "/Users/jarvis/Downloads/libifp-1.0.1.0/src/./.libs/libifp_os_libusb.a")
+libtool: link: ar cr .libs/libifp.a  prim.o comp.o readwrite.o userfile.o error_strings.o tuner.o  .libs/libifp.lax/libifp_os_iconv.a/libifp_os_iconv_la-ifp_os_iconv.o  .libs/libifp.lax/libifp_os_libusb.a/libifp_os_libusb_la-ifp_os_libusb.o 
+libtool: link: ranlib .libs/libifp.a
+libtool: link: rm -fr .libs/libifp.lax
+libtool: link: ( cd ".libs" && rm -f "libifp.la" && ln -s "../libifp.la" "libifp.la" )
+Making all in examples
+gcc -DPACKAGE_NAME=\"libifp\" -DPACKAGE_TARNAME=\"libifp\" -DPACKAGE_VERSION=\"1.0.1.0\" -DPACKAGE_STRING=\"libifp\ 1.0.1.0\" -DPACKAGE_BUGREPORT=\"\" -DPACKAGE_URL=\"\" -DPACKAGE=\"libifp\" -DVERSION=\"1.0.1.0\" -DHAVE_STDIO_H=1 -DHAVE_STDLIB_H=1 -DHAVE_STRING_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDINT_H=1 -DHAVE_STRINGS_H=1 -DHAVE_SYS_STAT_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_UNISTD_H=1 -DSTDC_HEADERS=1 -DHAVE_DLFCN_H=1 -DLT_OBJDIR=\".libs/\" -DHAVE_ICONV=1 -DICONV_CONST= -DHAVE_USB_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STDIO_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_WCHAR_H=1 -DHAVE_STRING_H=1 -DHAVE_TIME_H=1 -DHAVE_FTS_H=1 -DHAVE_ICONV_H=1 -I.   -I../include     -g -O2 -Wall -W -Wno-unused-parameter -MT ifpline.o -MD -MP -MF .deps/ifpline.Tpo -c -o ifpline.o ifpline.c
+ifpline.c:271:10: warning: passing 'unsigned char[512]' to parameter of type
+      'char *' converts between pointers to integer types where one is of the unique plain 'char'
+      type and the other is not [-Wpointer-sign]
+  271 |         strncpy(buf, f, IFP_MAXPATHLEN);
+      |                 ^~~
+ifpline.c:272:17: warning: passing 'unsigned char[512]' to parameter of type
+      'char *' converts between pointers to integer types where one is of the unique plain 'char'
+      type and the other is not [-Wpointer-sign]
+  272 |         normalize_path(buf, IFP_MAXPATHLEN);
+      |                        ^~~
+ifpline.c:35:27: note: passing argument to parameter 'path' here
+   35 | void normalize_path(char *path, size_t size);
+      |                           ^
+ifpline.c:273:18: warning: passing 'unsigned char[512]' to parameter of type
+      'char *' converts between pointers to integer types where one is of the unique plain 'char'
+      type and the other is not [-Wpointer-sign]
+  273 |         slash2backslash(buf, buf, IFP_MAXPATHLEN);
+      |                         ^~~
+ifpline.c:38:28: note: passing argument to parameter 'dest' here
+   38 | void slash2backslash(char *dest, const char *src, size_t count);
+      |                            ^
+ifpline.c:273:23: warning: passing 'unsigned char[512]' to parameter of type
+      'const char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+  273 |         slash2backslash(buf, buf, IFP_MAXPATHLEN);
+      |                              ^~~
+ifpline.c:38:46: note: passing argument to parameter 'src' here
+   38 | void slash2backslash(char *dest, const char *src, size_t count);
+      |                                              ^
+ifpline.c:275:25: warning: passing 'unsigned char[512]' to parameter of type
+      'const char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+  275 |         i = ifp_list_dirs(dev, buf, print_basic, stdout);
+      |                                ^~~
+../include/ifp.h:319:57: note: passing argument to parameter 'dirname' here
+  319 | int ifp_list_dirs(struct ifp_device * dev, const char * dirname,
+      |                                                         ^
+ifpline.c:425:10: warning: passing 'unsigned char[512]' to parameter of type
+      'char *' converts between pointers to integer types where one is of the unique plain 'char'
+      type and the other is not [-Wpointer-sign]
+  425 |         strncpy(buf, p, IFP_MAXPATHLEN);
+      |                 ^~~
+ifpline.c:426:17: warning: passing 'unsigned char[512]' to parameter of type
+      'char *' converts between pointers to integer types where one is of the unique plain 'char'
+      type and the other is not [-Wpointer-sign]
+  426 |         normalize_path(buf, IFP_MAXPATHLEN);
+      |                        ^~~
+ifpline.c:35:27: note: passing argument to parameter 'path' here
+   35 | void normalize_path(char *path, size_t size);
+      |                           ^
+ifpline.c:427:18: warning: passing 'unsigned char[512]' to parameter of type
+      'char *' converts between pointers to integer types where one is of the unique plain 'char'
+      type and the other is not [-Wpointer-sign]
+  427 |         slash2backslash(buf, buf, IFP_MAXPATHLEN);
+      |                         ^~~
+ifpline.c:38:28: note: passing argument to parameter 'dest' here
+   38 | void slash2backslash(char *dest, const char *src, size_t count);
+      |                            ^
+ifpline.c:427:23: warning: passing 'unsigned char[512]' to parameter of type
+      'const char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+  427 |         slash2backslash(buf, buf, IFP_MAXPATHLEN);
+      |                              ^~~
+ifpline.c:38:46: note: passing argument to parameter 'src' here
+   38 | void slash2backslash(char *dest, const char *src, size_t count);
+      |                                              ^
+ifpline.c:429:14: warning: passing 'unsigned char[512]' to parameter of type
+      'const char *' converts between pointers to integer types where one is of the unique plain
+      'char' type and the other is not [-Wpointer-sign]
+  429 |         i = fn(dev, buf);
+      |                     ^~~
+ifpline.c:745:12: warning: variable 'mc_arg' set but not used
+      [-Wunused-but-set-variable]
+  745 |     char * mc_arg = NULL;
+      |            ^
+ifpline.c:13:19: warning: unused variable 'rcsid' [-Wunused-const-variable]
+   13 | static const char rcsid[] = "$Id: ifpline.c,v 1.5 2004/11/18 17:12:37 oakhamg Exp $";
+      |                   ^~~~~
+12 warnings generated.
+mv -f .deps/ifpline.Tpo .deps/ifpline.Po
+/bin/sh ../libtool  --tag=CC   --mode=link gcc  -g -O2 -Wall -W -Wno-unused-parameter  -L/usr/local/opt/libusb-compat/lib -o ifpline ifpline.o ../src/libifp.la -liconv -lusb 
+libtool: link: gcc -g -O2 -Wall -W -Wno-unused-parameter -o .libs/ifpline ifpline.o  -L/usr/local/opt/libusb-compat/lib ../src/.libs/libifp.dylib -liconv -lusb
+make[1]: Nothing to be done for `all-am'.
+jarvis@MacBookPro libifp-1.0.1.0 % sudo cp examples/.libs/ifpline /usr/local/bin/ifp
+Password:
+jarvis@MacBookPro libifp-1.0.1.0 % sudo ifp ls /
+dyld[9726]: Library not loaded: /usr/local/lib/libifp.4.dylib
+  Referenced from: <4F154088-14AF-34FC-991E-14438B0C7F8B> /usr/local/bin/ifp
+  Reason: tried: '/usr/local/lib/libifp.4.dylib' (no such file), '/System/Volumes/Preboot/Cryptexes/OS/usr/local/lib/libifp.4.dylib' (no such file), '/usr/local/lib/libifp.4.dylib' (no such file)
+zsh: abort      sudo ifp ls /
+jarvis@MacBookPro libifp-1.0.1.0 % sudo cp src/.libs/libifp.4.dylib /usr/local/lib/
+jarvis@MacBookPro libifp-1.0.1.0 % sudo ln -sf /usr/local/lib/libifp.4.dylib /usr/local/lib/libifp.dylib
+jarvis@MacBookPro libifp-1.0.1.0 % sudo ifp ls /
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+d VOICE
+d TUNER
+f iRiver, Catch the digital flow!.mp3	(size 1988608)
+d English Hits
+d Jagjit Singh
+jarvis@MacBookPro libifp-1.0.1.0 % sudo ifp battery
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+Battery status (really not sure!): 4
+jarvis@MacBookPro libifp-1.0.1.0 % ifp typestring 
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+iFP type string: IFP-180TC
+jarvis@MacBookPro libifp-1.0.1.0 % ifp firmversion
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+Firmware version (really not sure!):  1.14
+jarvis@MacBookPro libifp-1.0.1.0 % ifp df
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+Capacity: 130809856 bytes
+Free:     0 bytes
+jarvis@MacBookPro libifp-1.0.1.0 % ifp ls 
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+d VOICE
+d TUNER
+f iRiver, Catch the digital flow!.mp3	(size 1988608)
+d English Hits
+d Jagjit Singh
+jarvis@MacBookPro libifp-1.0.1.0 % ifp download "/iRiver, Catch the digital flow!.mp3" ~/Downloads/
+zsh: event not found: .mp3
+jarvis@MacBookPro libifp-1.0.1.0 % ifp ls /
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+d VOICE
+d TUNER
+f iRiver, Catch the digital flow!.mp3	(size 1988608)
+d English Hits
+d Jagjit Singh
+jarvis@MacBookPro libifp-1.0.1.0 % ifp download '/iRiver, Catch the digital flow!.mp3' ~/Downloads/
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+err:  [ifp_read_open] err=-17. rename from \iRiver, Catch the digital flow!.mp3 to \iRiver, Catch the digital flow!.m3p failed
+err:  [_ifp_read_stream_progress] err=-17. opening file ifp:\\iRiver, Catch the digital flow!.mp3
+
+err:  [_download_file] err=-17. problem reading.. ifp:\\iRiver, Catch the digital flow!.mp3
+err:  [ifp_download_file] err=-17. problem reading..
+File exists
+jarvis@MacBookPro libifp-1.0.1.0 % ifp ls /
+err:  [ifp_selftest] err=-2. couldn't get basic directory listing.
+err:  [ifp_init] err=-2. self test failed.
+Device isn't responding.. try jiggling the handle. (error 8)
+jarvis@MacBookPro libifp-1.0.1.0 % ifp ls /
+err:  [ifp_selftest] err=-2. couldn't get basic directory listing.
+err:  [ifp_init] err=-2. self test failed.
+Device isn't responding.. try jiggling the handle. (error 8)
+jarvis@MacBookPro libifp-1.0.1.0 % ifp ls /
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+d VOICE
+d TUNER
+f iRiver, Catch the digital flow!.mp3	(size 1988608)
+d English Hits
+d Jagjit Singh
+jarvis@MacBookPro libifp-1.0.1.0 % ifp ls /
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+d VOICE
+d TUNER
+f iRiver, Catch the digital flow!.mp3	(size 1988608)
+d English Hits
+d Jagjit Singh
+jarvis@MacBookPro libifp-1.0.1.0 % ifp rm '/iRiver, Catch the digital flow!.mp3'
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+jarvis@MacBookPro libifp-1.0.1.0 % ifp ls /
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+d VOICE
+d TUNER
+d English Hits
+d Jagjit Singh
+jarvis@MacBookPro libifp-1.0.1.0 % ifp df
+wrn:  [ifp_delta] interesting, there were only 4 bytes.
+Detected: model IFP-180TC, firmware 1.14, battery =[####], delta 1.0.0.0
+Capacity: 130809856 bytes
+Free:     2097152 bytes
+jarvis@MacBookPro libifp-1.0.1.0 % 
