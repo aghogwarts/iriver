@@ -198,21 +198,21 @@ The libifp source (in the SourceForge Git repo) contains all the USB command seq
 
 ## Quick Reference Card
 
-| Command | Description |
-|---|---|
-| `ifp ls /` | List root directory |
-| `ifp ls /Music` | List specific folder |
-| `ifp upload file.mp3 /` | Upload file to root |
-| `ifp upload dir/ /dir` | Upload directory |
-| `ifp download /file.mp3 ./` | Download file |
-| `ifp rm /file.mp3` | Delete file |
-| `ifp rm -r /folder` | Delete folder recursively |
-| `ifp mkdir /NewFolder` | Create folder |
-| `ifp df` | Show free space |
-| `ifp battery` | Show battery level |
-| `ifp typestring` | Show model number |
-| `ifp firmversion` | Show firmware version |
+| Command                     | Description               |
+| --------------------------- | ------------------------- |
+| `ifp ls /`                  | List root directory       |
+| `ifp ls /Music`             | List specific folder      |
+| `ifp upload file.mp3 /`     | Upload file to root       |
+| `ifp upload dir/ /dir`      | Upload directory          |
+| `ifp download /file.mp3 ./` | Download file             |
+| `ifp rm /file.mp3`          | Delete file               |
+| `ifp rm -r /folder`         | Delete folder recursively |
+| `ifp mkdir /NewFolder`      | Create folder             |
+| `ifp df`                    | Show free space           |
+| `ifp battery`               | Show battery level        |
+| `ifp typestring`            | Show model number         |
+| `ifp firmversion`           | Show firmware version     |
 
 ---
 
-*Built from the [ifp-driver](https://ifp-driver.sourceforge.net/) open-source project (libifp 1.0.1.0)*
+_Built from the [ifp-driver](https://ifp-driver.sourceforge.net/) open-source project (libifp 1.0.1.0)_
